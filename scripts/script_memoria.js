@@ -7,7 +7,7 @@
 
     for(var i = 0; i < 16; i++){
         var img = {
-            src:"img/"+ i + ".jpg",
+            src:"../img/"+ i + ".jpg",
             id: i%8 
         };
         images.push(img);
