@@ -7,7 +7,7 @@
 .div_body{
   color: white;
   margin: 5%;
-  margin-top: 15%;
+  margin-top: 1%;
 }
 
 body {
@@ -52,12 +52,13 @@ footer{
 }
 .gameIcon:hover{
   filter: grayscale(100%);
+  background: url(https://media0.giphy.com/media/3ohs80DvuPm7my9Ev6/giphy.gif);
 }
 .score_div{
   background: black;
   padding: 200px;
 }
-
+/*loading icon*/
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid purple;
