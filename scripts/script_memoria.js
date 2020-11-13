@@ -1,3 +1,4 @@
+
 (function(){
     var matches = 0;
     var images = [];
@@ -12,6 +13,9 @@
         };
         images.push(img);
     }
+
+
+   
     startGame();
 
     function startGame(){
@@ -97,6 +101,7 @@
     function gameOver(){
         modalGameOver.style.zIndex = 10;
         modalGameOver.addEventListener("click",startGame,false);
+        
     }
 
     function matchCardSign(){
@@ -109,6 +114,16 @@
             imgMatchSign.style.opacity = 1;
         },1500);
 
-    }
+    } 
+    function myFunction(){
+        var x;
 
+        var Nome=prompt("Digite seu Nome:");
+
+        if (Nome!=null)
+        {
+        x=Nome;
+        document.getElementById("demo").innerHTML=x;
+        }
+    }myFunction()
 }())
