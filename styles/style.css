@@ -53,10 +53,12 @@ footer{
 }
 .gameIcon{
   margin: 2%;
+  margin-top: 7%;
+  width: 350px;
+  height: 350px;
 }
 .gameIcon:hover{
   filter: grayscale(100%);
-  background: url(https://media0.giphy.com/media/3ohs80DvuPm7my9Ev6/giphy.gif);
 }
 .score_div{
   background: black;

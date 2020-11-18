@@ -10,10 +10,12 @@ body {
     justify-content: center;
 }
 
-label {
-    color: aliceblue;
+.timer {
+    color: darkgreen;
+    font-size: 50px;
 }
 
-p {
-    color: aliceblue;
+.vida {
+    color: darkgreen;
+    font-size: 50px;
 }
