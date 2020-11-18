@@ -17,6 +17,16 @@ body {
   background-repeat: no-repeat;
 }
 
+@media only screen and (min-width: 2000px){
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../img/videoGame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 /*NAVBAR*/
 .topnav {
   overflow: hidden;
@@ -48,31 +58,25 @@ footer{
   position:absolute;
    bottom:0;
    width:100%;
-   height:40px;
+   height:50px;
    background: purple;
 }
 .gameIcon{
   margin: 2%;
+  margin-top: 7%;
+  width: 350px;
+  height: 350px;
+}
+@media only screen and (max-width: 1349px){
+  .gameIcon{
+    width: 250px;
+    height: 250px;
+  }
 }
 .gameIcon:hover{
   filter: grayscale(100%);
-  background: url(https://media0.giphy.com/media/3ohs80DvuPm7my9Ev6/giphy.gif);
 }
 .score_div{
   background: black;
   padding: 200px;
-}
-/*loading icon*/
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid purple;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }

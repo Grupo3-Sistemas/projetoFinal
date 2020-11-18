@@ -9,12 +9,28 @@
 
 <body>
   
-  <label id="minutes">00</label><p>:</p><label id="seconds">00</label>
+  <table>
 
-  <canvas width="624" height="720" id="game"></canvas>
+    <tr>
+      <td>
+        <canvas width="624" height="720" id="game"></canvas>
+      </td>
+    </tr>
 
-  <label id="vidas">6</label>
+    <tr>  
+      <td>
+        <label class="vida">Vidas: </label>
+        <label class="vida" id="vidas">6</label>
 
+        <label class="timer" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tempo: </label>
+        <label class="timer" id="minutes">00</label>
+        <label class="timer">:</label>
+        <label class="timer" id="seconds">00</label>
+      </td>
+    </tr>
+
+  </table>
+  
   <script src="../scripts/script_frogger.js"></script>
 
 </body>
