@@ -104,7 +104,8 @@
         console.log(minutesLabel,secondsLabel);
         modalGameOver.style.zIndex = 10;
         modalGameOver.addEventListener("click",startGame,false);
-       // location.reload();
+        window.location.reload(false);
+
         
     }
 
