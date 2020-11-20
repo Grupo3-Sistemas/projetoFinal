@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -5,6 +8,7 @@
   <title>Frogger</title>
   <meta charset="UTF-8">
   <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_frogger.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,11 +30,13 @@
         <label class="timer" id="minutes">00</label>
         <label class="timer">:</label>
         <label class="timer" id="seconds">00</label>
+        <label class="timer" id="player" value="" hidden></label>
+        <label class="timer" id="totalSec" value="" hidden></label>
       </td>
     </tr>
 
   </table>
-  
+
   <script src="../scripts/script_frogger.js"></script>
 
 </body>

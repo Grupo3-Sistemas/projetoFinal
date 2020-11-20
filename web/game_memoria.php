@@ -8,14 +8,14 @@
 <body>
 <center>
 <div class="topnav">
-  <a href=index.html>Home</a>
+  <a href=index.php>Home</a>
   <a href="javascript:history.back()">Back</a>
-  <a href="scoreboard.html">Scoreboard</a>
+  <a href="scoreboard.php">Scoreboard</a>
 </div>
 
 <div class="div_body">
   
-  <iframe src="memoria.html" width="1350" height="675" style="border:none;">
+  <iframe src="memoria.php" width="1350" height="675" style="border:none;">
   
 </div>
 

@@ -187,14 +187,30 @@ function gameOver() {
 }
 
 // funcao de vitória
-function victory() {
-  var person = prompt("Você ganhou! Digite seu nome:", "");
-  if (person == null || person == "") {
-    txt = "Prompt Cancelado";
-  } else {
-    window.location.reload(false);
-  }
-}
+var victory = (function() {
+    var executed = false;
+    return function() {
+        if (!executed) {
+            executed = true;
+            // ajax
+            ajaxRequest = new XMLHttpRequest();
+            var player = player=prompt("Você ganhou! Digite seu Nome:");
+            var timeScore = document.getElementById("totalSec").value;
+            var game = 'frogger';
+              $.ajax({
+                url: "save_score.php",
+                type: "POST",
+                data: {
+                  player: player,
+                  timeScore: timeScore,
+                  game: game		
+                },
+                cache: false
+              });
+            window.location.reload(false);
+          }
+    };
+})();
 
 // funcao para gerenciar vidas do sapo
 var frogs = 6;
@@ -295,8 +311,7 @@ function loop() {
   // desenha sapos da linha de chegada
   scoredFroggers.forEach(frog => frog.render());
 
-  if (scoredFroggers.length == 1){
-    debugger;
+  if (scoredFroggers.length == 5){
     victory();
   }
 
@@ -383,21 +398,22 @@ requestAnimationFrame(loop);
 
 // configura e inicia timer
 var minutesLabel = document.getElementById("minutes");
-    var secondsLabel = document.getElementById("seconds");
-    var totalSeconds = 0;
-    setInterval(setTime, 1000);
-    
-    function setTime() {
-      ++totalSeconds;
-      secondsLabel.innerHTML = pad(totalSeconds % 60);
-      minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-    }
-    
-    function pad(val) {
-      var valString = val + "";
-      if (valString.length < 2) {
-        return "0" + valString;
-      } else {
-        return valString;
-      }
-    }
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  document.getElementById("totalSec").value = totalSeconds;
+}
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
