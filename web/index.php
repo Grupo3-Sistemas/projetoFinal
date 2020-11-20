@@ -15,7 +15,7 @@
 <div class="div_body">
   <img class="banner" src="../img/banner.png">
   <br>
-  <a href="./game_frogger.html"><img class="gameIcon" src="../img/frogger.png"></a>
+  <a href="./game_frogger.php"><img class="gameIcon" src="../img/frogger.png"></a>
   <a href="./game_memoria.html"><img class="gameIcon" src="../img/memoria.png"></a>
   <a href="./mem.html"><img class="gameIcon" src="../img/placeholder.png"></a>
   

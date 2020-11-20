@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
 <meta charset="utf-8">
-<title>Título</title>
+<title>Frogger</title>
 <link rel="stylesheet" href="../styles/style.css">
 </head>
 
@@ -9,26 +9,18 @@
 <center>
 
 <div class="topnav">
-  <a href=index.html>Home</a>
+  <a href=index.php>Home</a>
   <a href="javascript:history.back()">Back</a>
-  <a class="active" href="scoreboard.html">Scoreboard</a>
+  <a href="scoreboard.php">Scoreboard</a>
 </div>
 
 <div class="div_body">
   
-  <div class="score_div">
-
-  </div>
+  <iframe src="frogger.php" width="750" height="800" style="border:none;">
   
 </div>
 
 </center>
-<script src="./scripts/index.js"></script>
-
-<footer>
-
-<p class="p_footer">&copy; Grupo 3</p>
-</footer>
 
 </body>
 </html>
