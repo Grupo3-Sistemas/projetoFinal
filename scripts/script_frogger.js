@@ -194,7 +194,7 @@ var victory = (function() {
             executed = true;
             // ajax
             ajaxRequest = new XMLHttpRequest();
-            var player = player=prompt("Você ganhou! Digite seu Nome:");
+            var player = prompt("Você ganhou! Digite seu Nome:");
             var timeScore = document.getElementById("totalSec").value;
             var game = 'frogger';
               $.ajax({

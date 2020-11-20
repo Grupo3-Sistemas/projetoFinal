@@ -6,6 +6,7 @@
     <title>Jogo da Memoria </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/style_memoria.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
@@ -101,9 +102,9 @@
     </div>
 
     <div class="time">
-        <label id="minutes">00</label>:<label id="seconds">00</label>
-
-        <p id="demo"></p>
+        <label class="timer" id="minutes">00</label>:<label id="seconds">00</label>
+        <label class="timer" id="player" value="" hidden></label>
+        <label class="timer" id="totalSec" value="" hidden></label>
     </div>
 
 

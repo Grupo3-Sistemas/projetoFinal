@@ -78,5 +78,7 @@ footer{
 }
 .score_div{
   background: black;
-  padding: 200px;
+  height:auto ;
+  width:350px; 
+ 
 }
