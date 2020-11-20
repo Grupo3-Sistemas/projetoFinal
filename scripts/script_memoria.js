@@ -104,6 +104,21 @@
         console.log(minutesLabel,secondsLabel);
         modalGameOver.style.zIndex = 10;
         modalGameOver.addEventListener("click",startGame,false);
+         //ajax
+         ajaxRequest = new XMLHttpRequest();
+            var player = prompt("Você ganhou! Digite seu Nome:");
+            var timeScore = document.getElementById("totalSec").value;;
+            var game = 'memoria';
+            $.ajax({
+                url: "save_score.php",
+                type: "POST",
+                data: {
+                player: player,
+                timeScore: timeScore,
+                game: game
+                },
+                cache: false
+            });
         window.location.reload(false);
 
         
@@ -120,7 +135,7 @@
         },1500);
 
     } 
-    function myFunction(){
+    /*function myFunction(){
         var x;
 
         var Nome=prompt("Digite seu Nome:");
@@ -130,7 +145,7 @@
         x=Nome;
         document.getElementById("demo").innerHTML=x;
         }
-    }myFunction()
+    }myFunction()*/
 
         var minutesLabel = document.getElementById("minutes");
         var secondsLabel = document.getElementById("seconds");
@@ -141,6 +156,7 @@
         ++totalSeconds;
         secondsLabel.innerHTML = pad(totalSeconds % 60);
         minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        document.getElementById("totalSec").value = totalSeconds;
         }
         
         function pad(val) {

@@ -11,7 +11,7 @@
 <div class="topnav">
   <a href=index.php>Home</a>
   <a href="javascript:history.back()">Back</a>
-  <a href="scoreboard.php">Scoreboard</a>
+  <a href="scoreboard_frogger.php">Scoreboard</a>
 </div>
 
 <div class="div_body">

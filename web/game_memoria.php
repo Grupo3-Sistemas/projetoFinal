@@ -10,12 +10,12 @@
 <div class="topnav">
   <a href=index.php>Home</a>
   <a href="javascript:history.back()">Back</a>
-  <a href="scoreboard.php">Scoreboard</a>
+  <a href="scoreboard_memoria.php">Scoreboard</a>
 </div>
 
 <div class="div_body">
   
-  <iframe src="memoria.php" width="1350" height="675" style="border:none;">
+  <iframe src="memoria.php" width="1350" height="600" style="border:none;">
   
 </div>
 
