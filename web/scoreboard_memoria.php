@@ -10,6 +10,7 @@ table, th, td {
     font-size: 40px;
     padding: 8px;
     text-align:center;
+    background: black;
 }
 tr:hover {
   background-color: #6050e6;
@@ -34,7 +35,7 @@ th {
   <a class="active">Scoreboard</a>
 </div>
 
-<div class="div_body">
+<div>
   
   <div class="score_div"> 
     <?php

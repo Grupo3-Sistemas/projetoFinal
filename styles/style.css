@@ -76,9 +76,3 @@ footer{
 .gameIcon:hover{
   filter: grayscale(100%);
 }
-.score_div{
-  background: black;
-  height:auto ;
-  width:350px; 
- 
-}

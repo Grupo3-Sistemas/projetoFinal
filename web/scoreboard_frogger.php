@@ -10,6 +10,7 @@ table, th, td {
     font-size: 40px;
     padding: 8px;
     text-align:center;
+    background:black;
 }
 tr:hover {
   background-color: #6050e6;
@@ -36,7 +37,7 @@ th {
 
 <div class="div_body">
   
-  <div class="score_div"> 
+  <div > 
     <?php
     require_once('connection.php');
     $sql = "SELECT nmPlayer, timeScore FROM frogger ORDER BY timeScore";

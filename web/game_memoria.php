@@ -15,7 +15,7 @@
 
 <div class="div_body">
   
-  <iframe src="memoria.php" width="1350" height="600" style="border:none;">
+  <iframe src="memoria.php" width="1350" height="625" style="border:none;">
   
 </div>
 

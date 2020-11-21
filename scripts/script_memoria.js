@@ -107,7 +107,7 @@
          //ajax
          ajaxRequest = new XMLHttpRequest();
             var player = prompt("Você ganhou! Digite seu Nome:");
-            var timeScore = document.getElementById("totalSec").value;;
+            var timeScore = document.getElementById("totalSec").value;
             var game = 'memoria';
             $.ajax({
                 url: "save_score.php",
@@ -135,17 +135,6 @@
         },1500);
 
     } 
-    /*function myFunction(){
-        var x;
-
-        var Nome=prompt("Digite seu Nome:");
-
-        if (Nome!=null)
-        {
-        x=Nome;
-        document.getElementById("demo").innerHTML=x;
-        }
-    }myFunction()*/
 
         var minutesLabel = document.getElementById("minutes");
         var secondsLabel = document.getElementById("seconds");
