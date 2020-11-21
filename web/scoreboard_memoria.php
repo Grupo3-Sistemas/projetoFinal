@@ -10,7 +10,8 @@ table, th, td {
     font-size: 40px;
     padding: 8px;
     text-align:center;
-    background: black;
+    background:black;
+    color: white;
 }
 tr:hover {
   background-color: #6050e6;
@@ -37,7 +38,7 @@ th {
 
 <div>
   
-  <div class="score_div"> 
+  <div> 
     <?php
     require_once('connection.php');
     $sql = "SELECT nmPlayer, timeScore FROM memoria ORDER BY timeScore";
