@@ -1,8 +1,8 @@
 <?php
-	$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$dbname = "unijogos";
+	$servidor = "database-1.cary8d937tuw.us-east-1.rds.amazonaws.com";
+	$usuario = "admin";
+	$senha = "adminadmin";
+	$dbname = "banco1";
 	
 	//Criar a conexão
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
