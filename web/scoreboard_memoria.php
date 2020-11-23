@@ -41,7 +41,7 @@ th {
   <div> 
     <?php
     require_once('connection.php');
-    $sql = "SELECT nmPlayer, timeScore FROM memoria ORDER BY timeScore";
+    $sql = "SELECT nmPlayer, timeScore FROM memoria ORDER BY timeScore LIMIT 10";
     $result = mysqli_query($conn, $sql);
 
     if ($result->num_rows > 0) {
